@@ -4,19 +4,6 @@
 /* Google Web Font : Montserrat */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
 
-/* body {
-	font-family: 'Montserrat', sans-serif;
-	background-color: #eee;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-} */
-
-/* a {
-	text-decoration: none;
-	color: #222;
-} */
 
 #portfolio h1,
 #portfolio h2,
@@ -30,7 +17,7 @@
 /* --------------------------------- */
 
 .work-item {
-  width: 230px;
+  width: 300px;
 	border-radius: 15px;
 	overflow: hidden;
 	position: relative;
@@ -40,21 +27,21 @@
   filter: blur(2px);
 }
 .work-item img {
-	width: 230px;
-	height: 330px;
+	width: 300px;
+	height: 400px;
   transition: 0.5s;
 }
 
 
 .detail {
-	background-color: #ddd;
+	background-color: rgb(240, 240, 240);
 	position: absolute;
 	 /* HTML의 모든 요소는 position:absolute로 주면 display속성이 inline-block으로 바뀐다 */
 	width: 100%;
-	bottom : -10px;
+	bottom : -75px;
 	/* bottom: 0; 다 작업하고 주석하기 */
 	left : 0;
-	height: 30%;
+	height: 35%;
 	transition: 0.5s; /* 하얀색 detail 영역이 부드럽게 움직이도록  */
 	/* 상하 좌우 */
 	padding: 5px 20px; /* 이거 때문에 box-size : borderbox */
@@ -78,18 +65,28 @@
 	font-size: 10px;
 	color: #888;
 	line-height: 1.2em;
+  font-size: 13px;
 }
 .title h2 em {
-	display: block;
+	/* display: block; */
 	font-style: normal;
-	margin-bottom: 5px;
+	/* margin-bottom: 5px; */
 	color: #000;
-	font-weight: 500;
+	font-weight: 700;
+  font-size: 15px;
+  margin-right: 10px;
 }
 
+.title p {
+  color: #000;
+  margin: 0;
+}
 
-.info {
-	position: relative;
+.title p:nth-of-type(1) {
+  font-size: 13px;
+}
+.title p:nth-of-type(2) {
+  font-size: 12px;
 }
 
 .add-cart {
@@ -97,7 +94,8 @@
   background-color: #fff;
   width: 100%;
   padding: 5px;
-  font-size: 10px;
+  font-size: 12px;
+  margin-top: 5px;
 }
 .add-cart:hover {
   background-color: #000;

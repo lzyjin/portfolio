@@ -1,10 +1,11 @@
+
 .tab-inner {
   /* border: 1px solid red; */
 
   position: relative;
 }
 
-input[name="tabmenu"] {
+input[name=tabmenu] {
   display: none;
 }
 
@@ -16,6 +17,7 @@ input[name="tabmenu"] {
 
   overflow: hidden;
   position: relative;
+
 }
 .items {
   position: absolute;
@@ -40,13 +42,11 @@ input[name="tabmenu"] {
   background-size: cover;
 }
 .items div:nth-child(2) {
-  background: url(/portfolio/muji/section1/mainvisual_pc.jpg) no-repeat center
-    center;
+  background: url(/portfolio/muji/section1/mainvisual_pc.jpg) no-repeat center center;
   background-size: cover;
 }
 .items div:nth-child(3) {
-  background: url(/portfolio/muji/section1/mainvisual_pc_210806.jpg) no-repeat
-    center center;
+  background: url(/portfolio/muji/section1/mainvisual_pc_210806.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -64,20 +64,22 @@ input[name="tabmenu"] {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   cursor: pointer;
+  margin-left: 3px;
+    margin-right: 3px;
 }
 
-input[id="tab1"]:checked ~ .tabs .items {
+input[id=tab1]:checked~.tabs .items {
   left: 0;
 }
-input[id="tab2"]:checked ~ .tabs .items {
+input[id=tab2]:checked~.tabs .items {
   left: -100%;
 }
-input[id="tab3"]:checked ~ .tabs .items {
+input[id=tab3]:checked~.tabs .items {
   left: -200%;
 }
 
-input[id="tab1"]:checked ~ .btn label[for="tab1"],
-input[id="tab2"]:checked ~ .btn label[for="tab2"],
-input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+input[id=tab1]:checked~.btn label[for=tab1],
+input[id=tab2]:checked~.btn label[for=tab2],
+input[id=tab3]:checked~.btn label[for=tab3] {
   background-color: #7d031c;
 }
