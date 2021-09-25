@@ -137,14 +137,10 @@ nav a::after {
   font-weight: 700;
 }
 
-
-
-
-
+/* Common CSS */
 section {
   display: flex;
   width: 70%;
-  height: 100vh;
   overflow: hidden;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -344,6 +340,14 @@ p.typing {
 .profile h4:nth-of-type(3) {
   margin-top: 10px;
 }
+.profile p {
+  line-height: 20px;
+  padding: 0;
+  margin: 5px 0;
+}
+.profile p em {
+  font-style: normal;
+}
 
 /* Article : Skills  */
 .skill {}
@@ -419,7 +423,7 @@ p.typing {
 
 /* Article : Portfolio  */
 .portfolio-article {
-  min-height: 80vh;
+  min-height: 100% !important;
 }
 /* .portfolio-items>div { */
   .portfolio-items-inner {

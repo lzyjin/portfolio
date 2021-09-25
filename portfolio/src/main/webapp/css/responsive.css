@@ -1,21 +1,20 @@
-@media screen and (min-width : 1500px) {
-	/* .intro1 video {
-    width: 500px !important;
-  }
+@media (min-width : 1500px) {
   .typing-outter {
-    width: 700px !important;
-  } */
+    width: 700px;
+  }
   aside a {
     width: 50px;
     height: 50px;
   }
 }
 
-@media screen and (max-width : 800px) {
+@media (max-width : 768px) {
   main {
     width: 100%;
     overflow: hidden;
   }
+
+  /* Aside Navigation */
   aside {
     display: block;
     width: 100%;
@@ -27,12 +26,23 @@
   }
   aside a {
     display: inline-block;
-    margin: 0 30px;
+    margin: 0 18px;
+    width: 25px;
+    height: 25px;
   }
+  nav a::after {
+    font-size: 12px;
+  }
+
+  /* Section */
   section {
     width: 100%;
     margin-top: 110px;
+    height: fit-content;
+    width: 90%;
   }
+
+  /* Article : Intro */
   .intro1 video {
     width: 100%;
   }
@@ -41,10 +51,13 @@
   }
   .intro2-1 {
   }
-  section {
-    height: fit-content;
-    width: 90%;
+
+  /* Article : Profile */
+  .profile p em {
+    display: block;
   }
+
+  /* Article : Portfolio */
   .portfolio-items-inner>div {
     display: block;
   }
@@ -58,5 +71,33 @@
   }
   .portfolio-item .pi-img {
     background-position: top center;
+  }
+
+  /* Article : Contact */
+  .contact-body {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-body form input[type=text],
+  .contact-body form textarea {
+  display: inline-block;
+  width: 75%;
+  }
+  .contact-body form input[type=button] {
+    width: 65%;
+    margin-bottom: 30px;
+  }
+
+  /* Footer */
+  .modal-thanks {
+    position: absolute;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 150px;
+    padding: 12px;
+  }
+  .modal-thanks p {
+    font-size: 11px;
+    line-height: 25px;
   }
 }
