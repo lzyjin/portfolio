@@ -1,0 +1,62 @@
+@media screen and (min-width : 1500px) {
+	/* .intro1 video {
+    width: 500px !important;
+  }
+  .typing-outter {
+    width: 700px !important;
+  } */
+  aside a {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width : 800px) {
+  main {
+    width: 100%;
+    overflow: hidden;
+  }
+  aside {
+    display: block;
+    width: 100%;
+  }
+  nav {
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+  }
+  aside a {
+    display: inline-block;
+    margin: 0 30px;
+  }
+  section {
+    width: 100%;
+    margin-top: 110px;
+  }
+  .intro1 video {
+    width: 100%;
+  }
+  .typing-outter {
+    width: 100%;
+  }
+  .intro2-1 {
+  }
+  section {
+    height: fit-content;
+    width: 90%;
+  }
+  .portfolio-items-inner>div {
+    display: block;
+  }
+  .portfolio-items>div {
+    display: block;
+  }
+  .portfolio-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .portfolio-item .pi-img {
+    background-position: top center;
+  }
+}

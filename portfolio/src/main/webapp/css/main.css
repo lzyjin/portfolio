@@ -75,7 +75,9 @@ section:nth-of-type(5) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+}
+.intro-body .typing {
+  z-index: 999;
 }
 
 .intro-body .typing {
